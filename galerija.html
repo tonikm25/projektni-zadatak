@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika">
+    <meta name="keywords" content="">
+    <meta name="author" content="Toni Miter">   
+    <title>Galerija - Branko</title>
+
+    <!-- Dodajemo link za FontAwesome ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h2 {
+            width: 100%; /* Centriranje teksta */
+        }
+
+        figure {
+            margin: 10px;
+            flex: 0 0 calc(50% - 20px);
+            display: inline-block;
+            text-align: center;
+            border: 2px solid #ddd; /* Obrub oko slike i opisa */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            width: 50%; /* Postavljanje širine slike na 100% unutar roditeljskog elementa */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="branko.jpg" alt="Branko">
+        <h1>Lave, ustani, zapni, kreni!</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <h2>Galerija Slika</h2>
+
+        <figure>
+            <a href="slika1.jpg" target="_blank">
+                <img src="slika1.jpg" alt="Branko">
+            </a>
+            <figcaption>branko na supertalentu</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika2.jpg" target="_blank">
+                <img src="slika2.jpg" alt="branko">
+            </a>
+            <figcaption>branko u prirodi</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika3.jpg" target="_blank">
+                <img src="slika3.jpg" alt="branko">
+            </a>
+            <figcaption>branko na supertalentu</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika4.jpg" target="_blank">
+                <img src="slika4.jpg" alt="branko">
+            </a>
+            <figcaption>branko poziva tebe da mu se pridružiš u boljem životu</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika5.jpg" target="_blank">
+                <img src="slika5.jpg" alt="branko">
+            </a>
+            <figcaption>potišten lav nije nikakav lav</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika6.jpg" target="_blank">
+                <img src="slika6.jpg" alt="branko">
+            </a>
+            <figcaption>brankov moto</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika7.jpg" target="_blank">
+                <img src="slika7.jpg" alt="branko">
+            </a>
+            <figcaption>branko na kavi</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika8.jpg" target="_blank">
+                <img src="slika8.jpg" alt="branko">
+            </a>
+            <figcaption>branko na supertalentu</figcaption>
+        </figure>
+        <figure>
+            <a href="slika9.jpg" target="_blank">
+                <img src="slika9.jpg" alt="branko">
+            </a>
+            <figcaption>i mali lavić će jednoga dana postati veliki lav</figcaption>
+        </figure>
+
+        <figure>
+            <a href="slika10.jpg" target="_blank">
+                <img src="slika10.jpg" alt="branko">
+            </a>
+            <figcaption>brankov ured</figcaption>
+        </figure>
+
+    </main>
+<br><br><br>
+    <footer>
+        &copy; Toni Miter | <a href="https://github.com/tonikm25/web-ap-projektni-zadatak" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+</body>
+</html>

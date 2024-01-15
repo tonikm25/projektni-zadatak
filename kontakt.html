@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="life coaching by Branko Buzov">
+    <meta name="keywords" content="">
+    <meta name="author" content="Toni Miter">   
+    <title>Kontakt - Branko Buzov</title>
+
+    <!-- Dodajemo link za FontAwesome ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        iframe {
+            width: 50%;
+            height: 450px; /* Povećano za 50% */
+            border: 0;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="branko.jpg" alt="branko">
+        <h1>Lave, ustani, zapni, kreni!</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <h2>Kontaktirajte me</h2>
+        
+        <!-- Google Map embed -->
+        <p>Lokacija: Veleučilište Velika Gorica</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.541354023591!2d16.040864415635354!3d45.704740779104346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476633e907ed5efb%3A0x80cb5a99900f3467!2sVeleu%C4%8Dili%C5%A1te%20Velika%20Gorica!5e0!3m2!1sen!2shr!4v1646150080954!5m2!1sen!2shr" 
+            width="50%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="#" method="post">
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" required>
+
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime" name="prezime" required>
+
+            <label for="email">E-mail adresa:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Unesite ispravnu e-mail adresu" required>
+
+            <label for="drzava">Država:</label>
+            <select id="drzava" name="drzava">
+                <!-- Dodajte opcije prema potrebi -->
+                <option value="hrvatska">Hrvatska</option>
+                <option value="slovenija">Slovenija</option>
+                <option value="bih">Bosna i Hercegovina</option>
+            </select>
+
+            <label for="poruka">Opis:</label>
+            <textarea id="poruka" name="poruka" rows="4" required></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </main>
+    <br><br><br>
+
+    <footer>
+        &copy; Toni Miter | <a href="https://github.com/tonikm25/web-ap-projektni-zadatak" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="life coaching by Branko Buzov">
+    <meta name="keywords" content="">
+    <meta name="author" content="Toni Miter">   
+    <title>Novosti o Branku </title>
+
+    <!-- Dodajemo link za FontAwesome ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex: 1 0 45%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        article img {
+            max-width: 75%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        article h2,
+        article p {
+            margin-bottom: 10px;
+        }
+
+        article a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007BFF;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            article {
+                flex: 1 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="branko.jpg" alt="branko">
+        <h1>Lave, ustani, zapni, kreni!</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <!-- Vaš prethodni sadržaj ostaje netaknut -->
+
+        <!-- Članci -->
+        <article>
+            <a href="novosti-1.html">
+                <img src="slika3.jpg" alt="Članak 1">
+            </a>
+            <h2><a href="novosti-1.html">Branko u SuperTalentu</a></h2>
+            <p>Pogledajte kako je branko nastupio u SuperTalentu</p>
+            <p>Datum objave: 15. siječnja 2024.</p>
+            <a href="novosti-1.html">Više o tom članku</a>
+        </article>
+
+        <article>
+            <a href="novosti-2.html">
+                <img src="clanak2.jpg" alt="Članak 2">
+            </a>
+            <h2><a href="novosti-2.html">Branko u svađi sa Majom Šuput</a></h2>
+            <p>Pogledajte svađu između Branka i Maje</p>
+            <p>Datum objave: 20. siječnja 2024.</p>
+            <a href="novosti-2.html">Više o tom članku</a>
+        </article>
+
+        <article>
+            <a href="novosti-3.html">
+                <img src="slika10.jpg" alt="Članak 3">
+            </a>
+            <h2><a href="novosti-3.html">Novi ured Branka</a></h2>
+            <p>Pogledajte novi ured Brankov</p>
+            <p>Datum objave: 25. siječnja 2024.</p>
+            <a href="novosti-3.html">Više o tom članku</a>
+        </article>
+
+        <article>
+            <a href="novosti-4.html">
+                <img src="clanak4.jpg" alt="Članak 4">
+            </a>
+            <h2><a href="novosti-4.html">Nova knjiga Brankova</a></h2>
+            <p>Nova knjiga Branka u najavi trebala bi izaći uskoro</p>
+            <p>Datum objave: 1. veljače 2024.</p>
+            <a href="novosti-4.html">Više o tom članku</a>
+        </article>
+
+        <article>
+            <a href="novosti-5.html">
+                <img src="clanak5.jpg" alt="Članak 5">
+            </a>
+            <h2><a href="novosti-5.html">Najava novih turneja</a></h2>
+            <p>Branko najavljuje nove turneje po Srbiji</p>
+            <p>Datum objave: 5. veljače 2024.</p>
+            <a href="novosti-5.html">Više o tom članku</a>
+        </article>
+    </main>
+
+    <footer>
+        &copy; Toni Miter | <a href="https://github.com/tonikm25/web-ap-projektni-zadatak" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+</body>
+</html>
